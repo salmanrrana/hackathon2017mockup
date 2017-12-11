@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Moe's Family Feedbag</title>
+  </head>
+  <body>
+
+    <!-- Client/Submit area -->
+    <div class="mainTitle">
+      <div class="title">
+        <h1>Moe's Family</h1>
+        <h1 class="feedbag">Feedbag</h1>
+      </div>
+      <section>
+            <form onSubmit={this.getFeed.bind(this)}>
+              <input type="file" class="chooseFile"/>
+              <button type="submit" class="fileButton">Submit</button>
+            </form>
+      </section>
+    </div>
+
+    <!-- Result Area -->
+    <div class="sectionTwo">
+      <div class="choices">
+
+
+        <!-- PIE ELEMENTS -->
+        <div class="choiceBox">
+          <h3>Pie Required Elements</h3>
+          <div class="elements">
+            <div class="lines">
+              <p>TRANSACTION DATE</p>
+              <input type="checkbox" class="box" />
+            </div>
+            <div class="lines">
+              <p>EMAIL ADDRESS</p>
+              <input type="checkbox" class="box" />
+            </div>
+            <div class="lines">
+              <p>USER NAME</p>
+              <input type="checkbox" class="box" />
+            </div>
+            <div class="lines">
+              <p>USER ID</p>
+              <input type="checkbox" class="box" />
+            </div>
+            <div class="lines">
+              <p>DEPLOYMENT ZONE</p>
+              <input type="checkbox" class="box" />
+            </div>
+            <div class="lines">
+              <p>LOCALE</p>
+              <input type="checkbox" class="box" />
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT ELEMENTS -->
+        <div class="choiceBox">
+          <h3>Product Required Elements</h3>
+          <div class="elements">
+            <div class="lines">
+              <p>External ID</p>
+              <input type="checkbox" />
+            </div>
+            <div class="lines">
+              <p>Image URL</p>
+              <input type="checkbox" />
+            </div>
+            <div class="lines">
+              <p>Product Name</p>
+              <input type="checkbox" />
+            </div>
+            <div class="lines">
+              <p>Product Price</p>
+              <input type="checkbox" />
+            </div>
+          </div>
+        </div>
+
+        <!-- RESULTS AREA -->
+        <div class="results">
+          <div class="resultsArea">
+            <div>
+              <div class="circle"></div>
+              <p>circle results</p>
+
+            </div>
+
+            <div class="resultsWritten">
+              <p>Transaction Date</p>
+              <p>Email Address</p>
+            </div>
+          </div>
+
+          <div class="buttonDetails">
+            <button class="downloadDetails">DOWNLOAD DETAILS</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  <script type="text/javascript" src="/static/js/bundle.js"></script></body>
+</html>
